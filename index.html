@@ -3,9 +3,9 @@
 <head>
     <style>
         body {
-            font-family: "Century", sans-serif; 
-            background-color: #696969; /* Set the background color to dark grey */
-            color: #fff; /* Set text color to white */
+            font-family: "Century", sans-serif;
+            background-color: #404040;
+            color: #fff;
             margin: 0;
             padding: 0;
             display: flex;
@@ -17,7 +17,7 @@
 
         .container {
             text-align: center;
-            background-color: #A9A9A9; /* Set the background color to a different shade of grey, bit lighter */
+            background-color: #404040;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -43,22 +43,28 @@
 
         .social-icons a {
             text-decoration: none;
-            color: #fff; /* Set link color to white */
+            color: #fff;
             font-size: 24px;
             margin: 0 10px;
         }
 
-        /* Add CSS for your profile photo */
+        .social-icons a.linkedin {
+            /* Add LinkedIn SVG icon here */
+        }
+
+        .social-icons a.soundcloud {
+            /* Add SoundCloud SVG icon here */
+        }
+
         .profile-photo {
-            width: 150px; /* Adjust the size as needed */
+            width: 150px;
             height: 150px;
-            border-radius: 50%; /* To make it a circle */
+            border-radius: 50%;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Add your profile photo -->
         <img class="profile-photo" src="https://avatars.githubusercontent.com/u/53429825?v=4" alt="Profile Photo">
 
         <h1>Joh Akaishi</h1>
@@ -66,14 +72,19 @@
         <p>
             Hi there! I'm Joh, a data scientist with a passion for triathlons and techno.
         </p>
-        <p>
-            Connect with me :) 
-            <a href="https://www.linkedin.com/in/johakaishi/">LinkedIn</a> 
-            <a href="https://soundcloud.com/sekio">SoundCloud</a>
-        </p>
         <div class="social-icons">
-            <a href="https://www.linkedin.com/in/johakaishi/">LinkedIn</a>
-            <a href="https://soundcloud.com/sekio">SoundCloud</a>
+            <a href="https://www.linkedin.com/in/johakaishi" class="linkedin">
+                <!-- LinkedIn SVG icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M21.6 0H2.4C1.1 0 0 1.1 0 2.4v19.2C0 22.9 1.1 24 2.4 24h19.2c1.3 0 2.4-1.1 2.4-2.4V2.4C24 1.1 22.9 0 21.6 0zm-6.2 21.6h-2.9v-8.9h2.9v8.9zm-1.4-10.6c-1.6 0-2.7-1.1-2.7-2.5 0-1.4 1.1-2.5 2.7-2.5s2.7 1.1 2.7 2.5c0 1.4-1.1 2.5-2.7 2.5zm8.9 10.6h-2.8v-4.2c0-1 0-2.2-1.4-2.2-1.4 0-1.6 1.1-1.6 2.2v4.2H11v-8.9h2.8v1.2h.1c.4-.7 1.3-1.4 2.7-1.4 2.9 0 3.5 1.9 3.5 4.3v4.8z"/>
+                </svg>
+            </a>
+            <a href="https://soundcloud.com/sekio" class="soundcloud">
+                <!-- SoundCloud SVG icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M2 6c-.6 0-1 .4-1 1v9c0 1.6 1.3 3 3 3h5c.4 0 .6-.1.8-.5 2.1-3.8 5.9-6.5 10.2-6.5 6 0 11 4.9 11 11v1h2c1.1 0 2-.9 2-2v-1c0-8.8-7.2-16-16-16h-1z"/>
+                </svg>
+            </a>
         </div>
     </div>
 </body>
